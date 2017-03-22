@@ -72,8 +72,5 @@ coverage
 tmp*
 .idea/
 
-# The compiled/babelified modules
-lib/
-
 # Yarnfile
 yarn.lock
