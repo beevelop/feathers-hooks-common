@@ -126,7 +126,7 @@ export const combine = (...rest) => function (hook) {
  *   iffElse(isProvider('rest'), [hook4, hook5], hook6])
  * )
  */
-export const iffElse = (ifFcn, trueHooks, falseHooks) => (hook) => {
+export const iffElse = (ifFcn, trueHooks, falseHooks) => function (hook) {
   if (typeof trueHooks === 'function') { trueHooks = [trueHooks]; }
   if (typeof falseHooks === 'function') { falseHooks = [falseHooks]; }
 
